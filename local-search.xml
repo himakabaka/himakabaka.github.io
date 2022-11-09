@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>web前端</title>
+    <link href="/2022/11/10/web%E5%89%8D%E7%AB%AF/"/>
+    <url>/2022/11/10/web%E5%89%8D%E7%AB%AF/</url>
+    
+    <content type="html"><![CDATA[<p>跟我说：谢谢你，lht</p><span id="more"></span><h1 id="web前端"><a href="#web前端" class="headerlink" title="web前端"></a>web前端</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><h3 id="扯皮："><a href="#扯皮：" class="headerlink" title="扯皮："></a>扯皮：</h3><ul><li><p>IE被firefox和chrome打败：ie兼容性差，H5标准出来后影响</p></li><li><p>大前端：网页，应用，小程序</p></li><li><p>性能优化; HTTP方法，实践，应用</p></li><li><p>全栈式：html，css，js，ajax，node.js,sql (主流：原生，jQuery被弃用，喜新厌旧)</p></li></ul><h3 id="资源："><a href="#资源：" class="headerlink" title="资源："></a>资源：</h3><p>​<a href="https://devdocs.io/">https://devdocs.io/</a></p><p>​    <a href="https://developer.mozilla.org/zh-CN/">https://developer.mozilla.org/zh-CN/</a></p><p>​<a href="http://www.w3.org/TR/xhtml1">http://www.w3.org/TR/xhtml1</a></p><p>​<a href="http://www.w3schools.com/xhtml">http://www.w3schools.com/xhtml</a></p><p>​<a href="https://frontendchecklist.io/">https://frontendchecklist.io/</a></p><p>​<a href="https://scotch.io/">https://scotch.io/</a></p><h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><ul><li><p>十年前，微软凭借操作系统优势垄断浏览器，对于不同的ie版本，前端程序员甚至要编写不同的前端代码</p></li><li><p>H5规格后，百花齐放，拥抱不同设备的差异性，IE好死</p></li><li><p>浏览器之间的差异：布局引擎（决定文档的样式和渲染方法）</p></li><li><p>四种引擎：Trident(IE)，webkit&#x2F;webkit2，Blink，Gecko(firefox)</p></li></ul><h5 id="浏览器作用："><a href="#浏览器作用：" class="headerlink" title="浏览器作用："></a>浏览器作用：</h5><ul><li>执行</li><li>渲染</li></ul><h2 id="互联网"><a href="#互联网" class="headerlink" title="互联网"></a>互联网</h2><h3 id="www和internet的区别："><a href="#www和internet的区别：" class="headerlink" title="www和internet的区别："></a>www和internet的区别：</h3><ul><li>www&#x3D;html+http(s)</li><li>www是一本书，internet是书架</li></ul><h3 id="相关组织机构："><a href="#相关组织机构：" class="headerlink" title="相关组织机构："></a>相关组织机构：</h3><p>​IETF（互联网协议标准）</p><p>​ICANN（顶级域名）</p><p>​W3C（We标准）</p><h3 id="IP协议："><a href="#IP协议：" class="headerlink" title="IP协议："></a>IP协议：</h3><ul><li>ipv4，ipv6（死去的计网突然攻击我）</li><li>IPV4地址32位，ipv6地址128位</li><li>IPv6的路由表相比IPv4的更小</li><li>IPv6的安全性更高，在使用IPv6的网络时，用户可对网粒仗络层的数据进行加密</li></ul><h3 id="TCP"><a href="#TCP" class="headerlink" title="TCP:"></a>TCP:</h3><p>​面向连接的，可靠的，基于字节流的传输层协议，是ip协议的基础，由IETF的RFC 793 定义</p><p>​命令：netstat (Windows)，more in [<a href="http://www.nirsoft.net/utils/cports.html]">http://www.nirsoft.net/utils/cports.html]</a></p><h3 id="UDP"><a href="#UDP" class="headerlink" title="UDP:"></a>UDP:</h3><p>​传输层协议，一个简单的面向数据报的传输层协议，提供的是非面向连接的、不可靠的数据流传输（丢了就丢了，哎我视频怎么卡了），不可靠的数据流传输</p><p>​没有超时重发等机制，故而传输速度很快</p><h3 id="DNS："><a href="#DNS：" class="headerlink" title="DNS："></a>DNS：</h3><ul><li><p>域名系统(Domain Name System)，分布式数据库，把域名和ip 一 一对应</p></li><li><p>可以实现ip和域名的双向解析</p></li><li><p>解析过程:</p></li></ul><p><img src="/img%5Cdns.png" alt="dns"></p><ul><li><p>递归和迭代查询（to do）</p></li><li><p>DNS名称层次结构（树状，在顶层域名下被委派给不同组织）</p></li></ul><p><img src="/img%5CDNSlayer.png" alt="DNSlayer"></p><h4 id="域名（是上面那个树的一次从bottom到top）"><a href="#域名（是上面那个树的一次从bottom到top）" class="headerlink" title="域名（是上面那个树的一次从bottom到top）"></a>域名（是上面那个树的一次从bottom到top）</h4><ul><li>主机和DNS域名根据其在域名树中的位置命名</li><li>DNS域名树中的每个节点都可以通过唯一的全限定域名(FQDN)来标识。FQDN给出了在DNS树中的位置.例：yxb.s1mol.top</li><li>一个FQDN由标签(“yxb”，“s1mbol”， “top”)组成，标签之间用句号(“.”)隔开。</li><li>FQDN规则：<ul><li>结尾可以有一个句号(“.”)</li><li>每个标签最多可以有63个字符</li><li>FQDN包含字符、数字和破折号(“ - “)</li><li>FQDN不区分大小写</li></ul></li></ul><h3 id="before-DNS"><a href="#before-DNS" class="headerlink" title="before DNS:"></a>before DNS:</h3><p>​DNS 之前(直到1985), name-to-IP地址是通过使用FTP从中央服务器下载单个文件(hosts.txt)完成的</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>web前端</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>南软课程</tag>
+      
+      <tag>前端</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>welcome</title>
     <link href="/2022/10/26/hello-world/"/>
     <url>/2022/10/26/hello-world/</url>
