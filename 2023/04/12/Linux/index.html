@@ -1,0 +1,1103 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="s1mble">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="要挂要挂">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux">
+<meta property="og:url" content="http://s1mbol.top/2023/04/12/Linux/index.html">
+<meta property="og:site_name" content="s1mbol">
+<meta property="og:description" content="要挂要挂">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-04-12T11:57:33.000Z">
+<meta property="article:modified_time" content="2023-04-12T14:10:16.504Z">
+<meta property="article:author" content="s1mble">
+<meta property="article:tag" content="linux">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Linux - s1mbol</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"s1mbol.top","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Linux"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-04-12 19:57" pubdate>
+          2023年4月12日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          8.1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          68 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Linux</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="linux-Programming"><a href="#linux-Programming" class="headerlink" title="linux Programming"></a>linux Programming</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h3 id="你对linux的理解"><a href="#你对linux的理解" class="headerlink" title="你对linux的理解"></a>你对linux的理解</h3><div class="note note-warning">
+            <p>Chatgpt</p>
+          </div>
+
+<ul>
+<li><p>Linux是一种自由和开放源代码的操作系统，Linux在服务器、超级计算机、移动设备和嵌入式系统等各种计算设备中都有广泛的应用。</p>
+</li>
+<li><p>Linux操作系统的设计理念是基于Unix操作系统，它采用了分层的、模块化的架构，具有良好的可移植性和灵活性。Linux系统拥有丰富的命令行工具和系统管理工具，可以方便地对系统进行管理和配置。</p>
+</li>
+<li><p>Linux系统的核心是Linux内核，它是操作系统的核心组件，负责管理计算机的硬件资源，提供对应用程序的访问接口。Linux内核具有<strong>高度的稳定性</strong>、<strong>可靠性</strong>和<strong>安全性</strong>，能够支持<strong>多任务</strong>、多用户和<strong>多处理器</strong>等复杂的应用场景。</p>
+</li>
+<li><p>Linux系统的优势还在于其开放源代码的特点，这意味着用户可以自由地访问和修改系统的源代码，以适应不同的应用场景和需求。Linux社区拥有庞大的开发者和用户社群，他们不断地贡献代码、修复漏洞、提供技术支持，使得Linux系统能够不断地更新、发展和优化。</p>
+</li>
+<li><p>总的来说，Linux是一种高度灵活、可定制和安全的操作系统，它在多种应用场景中都具有广泛的应用和发展前景。</p>
+</li>
+<li><p>发行版 Red Hat , ubuntu , debian</p>
+</li>
+</ul>
+<h3 id="LBR和GPT的区别，有什么好处（考但分不高）"><a href="#LBR和GPT的区别，有什么好处（考但分不高）" class="headerlink" title="LBR和GPT的区别，有什么好处（考但分不高）"></a>LBR和GPT的区别，有什么好处（考但分不高）</h3><div class="note note-warning">
+            <p>Chatgpt</p>
+          </div>
+
+<ul>
+<li><p>MBR（Master Boot Record）是一种传统的硬盘分区表格式，它采用512字节的存储空间来记录硬盘分区信息，包括主分区、扩展分区和逻辑分区等。MBR最多只能支持4个主分区或3个主分区和1个扩展分区，如果需要更多的分区，则必须使用扩展分区来创建逻辑分区。MBR磁盘分区不能超多4T(只能使用4T的磁盘空间)。</p>
+</li>
+<li><p>逻辑分区则是在扩展分区中创建的分区，它用于解决MBR分区表最多只能支持4个主分区的限制。一个扩展分区可以包含多个逻辑分区，每个逻辑分区都可以像主分区一样被格式化和使用。</p>
+</li>
+<li><p>与MBR相比，逻辑分区可以让用户更加灵活地分配硬盘空间，同时支持更多的分区。然而，MBR和逻辑分区的缺点也显而易见。由于MBR分区表大小限制，它只能支持较小的硬盘容量，并且分区表本身容易损坏导致分区丢失。而逻辑分区则需要依赖于扩展分区来管理，如果扩展分区损坏，则所有的逻辑分区也会丢失。不用主分区的话，就可以全都分为逻辑分区。</p>
+</li>
+</ul>
+<h3 id="文件系统概念（看看）"><a href="#文件系统概念（看看）" class="headerlink" title="文件系统概念（看看）"></a>文件系统概念（看看）</h3><ul>
+<li>操作系统中负责访问和管理文件的部分</li>
+<li>文件及其某些属性的集合。它为引用这些文件的文件序列号提供了名称空间</li>
+</ul>
+<h3 id="GRUB-GRand统一引导加载程序（得知道所在位置，起什么作用，配置文件）"><a href="#GRUB-GRand统一引导加载程序（得知道所在位置，起什么作用，配置文件）" class="headerlink" title="GRUB-GRand统一引导加载程序（得知道所在位置，起什么作用，配置文件）"></a>GRUB-GRand统一引导加载程序（得知道所在位置，起什么作用，配置文件）</h3><ol>
+<li>GRUB</li>
+<li>程序存储在MBR(第一阶段)和&#x2F;boot&#x2F;grub(1.5和第二阶段)中</li>
+<li>了解文件系统结构； 无需像LILO一样激活配置</li>
+<li>配置文件&#x2F;boot&#x2F;grub&#x2F;grub.conf</li>
+<li>通过grub-install安装在MBR中</li>
+</ol>
+<h3 id="编译开源软件流程（配环境）"><a href="#编译开源软件流程（配环境）" class="headerlink" title="编译开源软件流程（配环境）"></a>编译开源软件流程（配环境）</h3><p>1. </p>
+<ul>
+<li>tar zxvf application.tar.gz*、</li>
+<li>cd application</li>
+<li>.&#x2F;configure make</li>
+<li>su -</li>
+<li>make install</li>
+</ul>
+<ol start="2">
+<li>apt-get command *</li>
+</ol>
+<h3 id="命令行提示符概念-看看"><a href="#命令行提示符概念-看看" class="headerlink" title="命令行提示符概念(看看)"></a>命令行提示符概念(看看)</h3><ul>
+<li>命令提示</li>
+</ul>
+<ol>
+<li>可以自己配置</li>
+<li><code>$</code>：以普通用户身份登录</li>
+<li><code>#</code>：以root身份登录</li>
+</ol>
+<ul>
+<li>命令提示符：<code>用户名@计算机名:当前目录$</code></li>
+</ul>
+<h3 id="命令（重点）"><a href="#命令（重点）" class="headerlink" title="命令（重点）"></a>命令（重点）</h3><p>ls -a；ls -r ls - l</p>
+<ol>
+<li><p>passwd：更改密码</p>
+</li>
+<li><p>mkpasswd：生成随机密码</p>
+</li>
+<li><p>date，cal：找出今天的日期并显示日历</p>
+</li>
+<li><p>who，finger：找出谁在系统上处于活动状态</p>
+</li>
+<li><p>clear：清除屏幕</p>
+</li>
+<li><p>echo：在屏幕上写一条消息</p>
+</li>
+<li><p>write、fall、talk、mesg</p>
+<ol>
+<li>write：给其他用户发信息</li>
+<li>wall：write all给所有登录到系统的用户发信息</li>
+<li>talk：建立聊天session</li>
+<li>mesg：可以屏蔽用户发来的信息</li>
+</ol>
+</li>
+<li><p>与目录一起使用的命令：</p>
+<ol>
+<li>pwd：打印工作目录</li>
+<li>cd：更改目录</li>
+<li>mkdir：创建目录</li>
+<li>rmdir：删除目录</li>
+<li>ls：列出目录的内容，-l，-a，-R(递归打印所有的子目录中的文件)选项</li>
+</ol>
+</li>
+<li><p>与文件一起使用的命令：</p>
+<ol>
+<li>touch：更新文件的访问和&#x2F;或修改时间</li>
+<li>cp：复制文件</li>
+<li>mv：移动并重命名文件</li>
+<li>ln：链接文件</li>
+<li>rm：删除文件</li>
+<li>cat：打印文件内容</li>
+<li>more&#x2F;less：逐页显示文件，more不可以回退，less可以回退</li>
+</ol>
+</li>
+</ol>
+<h3 id="文件类型（必考）"><a href="#文件类型（必考）" class="headerlink" title="文件类型（必考）"></a>文件类型（必考）</h3><ol>
+<li>普通文件</li>
+<li>字符特殊文件</li>
+<li>阻止特殊文件（&#x2F;dev中）</li>
+<li>socket（<strong>数据接口文件</strong>，<code>/var/run</code>这个目录中看到这种文件类型。）</li>
+<li>符号链接<ol>
+<li>软连接（快捷方式）</li>
+<li>硬链接（<strong>同一个文件有两个文件名</strong>，创建出来的硬链接不占用磁盘空间和inode号）</li>
+</ol>
+</li>
+<li>目录</li>
+<li>一共七种</li>
+</ol>
+<h3 id="目录机构（要求掌握）"><a href="#目录机构（要求掌握）" class="headerlink" title="目录机构（要求掌握）"></a>目录机构（要求掌握）</h3><ul>
+<li>所有Linux目录都包含在一个虚拟的”统一文件系统”中。</li>
+<li>物理设备安装在安装点上<ol>
+<li>软盘</li>
+<li>硬盘分区</li>
+<li>CD-ROM驱动器</li>
+</ol>
+</li>
+<li>没有驱动器号，例如A:，C:，…</li>
+</ul>
+<h3 id="文件权限（必考）"><a href="#文件权限（必考）" class="headerlink" title="文件权限（必考）"></a>文件权限（必考）</h3><ul>
+<li>文件权限可帮助您保护文件免受他人侵害系统上的用户</li>
+<li>三个访问级别：<ol>
+<li>用户：创建文件的用户</li>
+<li>组：拥有文件的组中的所有用户</li>
+<li>其他：其他</li>
+</ol>
+</li>
+<li>三个权限：<ol>
+<li>读取(r)：读取文件内容或列表内容目录</li>
+<li>写(w)：更改文件内容或创建&#x2F;删除文件在目录中</li>
+<li>执行(x)：以程序执行文件或使用目录作为活动目录</li>
+</ol>
+</li>
+</ul>
+<h3 id="进程（了解）and-命令（考）"><a href="#进程（了解）and-命令（考）" class="headerlink" title="进程（了解）and 命令（考）"></a>进程（了解）and 命令（考）</h3><ul>
+<li><p>进程是一项任务。</p>
+</li>
+<li><p>进程是一个正在执行的程序实例。由执行程序，它的当前值，状态信息以及通过操作系统管理此进程执行情况的资源组成。</p>
+</li>
+<li><p>一个地址空间，在该地址空间中执行一个或多个线程，以及这些线程所需的系统资源(susv3)</p>
+</li>
+<li><p>所有流程均由其他流程启动</p>
+<ol>
+<li>父母&#x2F;子女关系</li>
+<li>一个例外：init（PID 1）由内核本身启动</li>
+<li>树的层次结构</li>
+</ol>
+</li>
+<li><p>可以终止进程的原因有两个：</p>
+<ol>
+<li>该进程完成后会自行终止。</li>
+<li>该进程被另一个进程的信号终止</li>
+</ol>
+</li>
+<li><p>命令</p>
+<ul>
+<li>ps：报告进程状态</li>
+<li>pstree：显示进程树</li>
+<li>jobs，fg，bg，：作业控制<ol>
+<li>bg：后台执行</li>
+<li>fg：前台执行</li>
+</ol>
+</li>
+<li>kill：</li>
+<li>nohup：运行命令，忽略挂断信号</li>
+<li>nice，kill：</li>
+<li>top：显示最热门的CPU进程</li>
+</ul>
+</li>
+</ul>
+<h3 id="层次图（掌握）"><a href="#层次图（掌握）" class="headerlink" title="层次图（掌握）"></a>层次图（掌握）</h3><p>tmd肯定背不住，不看了</p>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h3 id="重定向（考）"><a href="#重定向（考）" class="headerlink" title="重定向（考）"></a>重定向（考）</h3><ul>
+<li><p>标准输入、标准输出、标准错误</p>
+<ol>
+<li>对应的文件描述符：0, 1, 2：0号文件描述符是用来读的，1、2号是用来写的</li>
+<li>C语言变量：stdin, stdout, stderr</li>
+</ol>
+</li>
+<li><p><code>&lt; &gt; &gt;&gt; 2&gt;</code></p>
+<ul>
+<li><p><code>&gt;&gt;</code>文件追加</p>
+</li>
+<li><p><code>&gt;</code> 文件覆盖</p>
+</li>
+<li><p><code>2&gt;</code>错误重定向</p>
+</li>
+<li><p>例：kill –HUP 1234 &gt; killout.txt 2&gt; killerr.txt</p>
+<p>例：kill –HUP 1234 &gt; killout.txt 2&gt;&amp; 1</p>
+</li>
+<li><p>&#96;&#96;&#96;c<br>cat &lt; abc.txt<br>cat 文件名<br>这里的文件名作为cat参数存在<br>类似于C语言中，main(int argc, char** argv)<br>当argc等于0，在system.in中读，再system.out打印<br>当cat后面加上参数，就读出文件内容，输出在屏幕上<br>cat &lt; 文件名，这里是重定向<br>执行流程完全不一样，仍然是走else分支</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br><span class="hljs-comment">### 管道（必考）</span><br><br>* 一个进程的输出作为另一个进程的输入<br>* 例:<br>  1. <span class="hljs-built_in">ls</span> | <span class="hljs-built_in">wc</span> –l：存在一个管道文件，这个文件作为输入传递给后面的命令<br>  2. <span class="hljs-built_in">ls</span> –lF | grep ^d<br>  3. ar t /usr/lib/libc.a | grep <span class="hljs-built_in">printf</span> | <span class="hljs-built_in">pr</span> -4 -t<br><br><span class="hljs-comment">### 正则（不考难的）</span><br><br>&#123;% note warning %&#125;<br>Chatgpt<br>&#123;% endnote %&#125;<br><br>```c<br>^：匹配行首<br>$：匹配行尾<br>.：匹配任意一个字符<br>*：匹配前面的字符零次或多次<br>+：匹配前面的字符一次或多次<br>?：匹配前面的字符零次或一次<br>[]：匹配中括号内的任意一个字符<br>[^]：匹配除了中括号内的任意一个字符<br>()：分组匹配，将括号内的内容作为一个整体<br>|：或运算符，匹配左右两边任意一个表达式<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>grep：搜索文件中符合条件的文本行 grep “^hello” file.txt # 搜索以”hello”开头的行 grep “world$” file.txt # 搜索以”world”结尾的行 grep “he..o” file.txt # 搜索匹配”hello”的行，”.”代表任意一个字符</p>
+</li>
+<li><p>sed：文本替换工具 sed “s&#x2F;hello&#x2F;world&#x2F;g” file.txt # 将文件中所有的”hello”替换为”world”</p>
+</li>
+<li><p>awk：文本处理工具 awk ‘&#x2F;hello&#x2F;{print $2}’ file.txt # 搜索包含”hello”的行，并输出该行的第二个字段</p>
+</li>
+<li><p>find：查找符合条件的文件 find &#x2F;path&#x2F;to&#x2F;dir -name “*.txt” # 查找以”.txt”结尾的文件</p>
+</li>
+</ul>
+<h3 id="bash"><a href="#bash" class="headerlink" title="bash"></a>bash</h3><ul>
+<li><p>脚本直接在命令行输入会执行且执行一次</p>
+</li>
+<li><p>执行脚本文件三种方法</p>
+<ul>
+<li><p>sh script_file</p>
+</li>
+<li><p>chmod +x script_file (chown, chgrp optionally)</p>
+<p>.&#x2F;script_file</p>
+</li>
+<li><p>source script_file, or</p>
+<p>. script_file</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="环境变量参数变量（掌握）"><a href="#环境变量参数变量（掌握）" class="headerlink" title="环境变量参数变量（掌握）"></a>环境变量参数变量（掌握）</h3><ul>
+<li>.<code>bash_profile</code>: 用户登录时被读取，其中包含的命令被bash执行</li>
+<li><code>.bashrc</code>: 启动一个新的shell时读取并执行</li>
+<li><code>.bash_logout</code>: 登录退出时读取执行</li>
+<li>Alias alias&#x2F;unaliascommand</li>
+<li>export command</li>
+<li>export, env &amp; set command</li>
+</ul>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><ul>
+<li><p>用户变量：</p>
+<ul>
+<li>用户在shell脚本里定义的变量</li>
+</ul>
+</li>
+<li><p>read命令</p>
+<ol>
+<li>用法：<code>read var</code> 或<code>read</code></li>
+<li><code>REPLY variable</code></li>
+</ol>
+<p>​</p>
+</li>
+</ul>
+<p>			</p>
+<h3 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">if</span> [ expression ]<br><span class="hljs-keyword">then</span><br>statements<br><span class="hljs-keyword">elif</span> [ expression ]<br><span class="hljs-keyword">then</span><br>statements<br><span class="hljs-keyword">elif</span> …<br><span class="hljs-keyword">else</span><br>statements<br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure>
+
+<p>；可以一行多句代码</p>
+<h3 id="case"><a href="#case" class="headerlink" title="case"></a>case</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">case</span> str <span class="hljs-keyword">in</span><br>  str1 | str2) statements;;<br>  str3 | str4) statements;;<br>  *) statements;;<br><span class="hljs-keyword">esac</span><br></code></pre></td></tr></table></figure>
+
+<p>循环</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">for</span> var <span class="hljs-keyword">in</span> list<br><span class="hljs-keyword">do</span><br>  statements<br><span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">while</span> condition<br><span class="hljs-keyword">do</span><br>  statements<br><span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">until condition<br><span class="hljs-keyword">do</span><br>  statements<br><span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">select item <span class="hljs-keyword">in</span> itemlist<br><span class="hljs-keyword">do</span><br>  statements<br><span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="参数扩展"><a href="#参数扩展" class="headerlink" title="参数扩展"></a>参数扩展</h3><h3 id="即时文档"><a href="#即时文档" class="headerlink" title="即时文档"></a>即时文档</h3><ul>
+<li>在shell脚本中向一条命令传送输入数据</li>
+</ul>
+<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><h3 id="EFL是什么"><a href="#EFL是什么" class="headerlink" title="EFL是什么"></a>EFL是什么</h3><div class="note note-warning">
+            <p>Chatgpt</p>
+          </div>
+
+<p>ELF格式（Executable and Linkable Format）是一种二进制文件格式，主要用于在Linux和UNIX系统上运行可执行文件、共享库和核心转储文件。它是由AT&amp;T Unix System V发布的。</p>
+<p>ELF文件格式是一种独立于平台的格式，它可以在不同的硬件架构和操作系统之间进行交叉编译，因为它提供了一种用于描述可执行文件和对象文件的标准格式。这个格式不仅仅包含了代码和数据，还包括了用于程序的链接、加载和运行的元数据，例如符号表、段表、重定位表等。</p>
+<h3 id="解释性和编译性的区别"><a href="#解释性和编译性的区别" class="headerlink" title="解释性和编译性的区别"></a>解释性和编译性的区别</h3><h3 id="头文件展开"><a href="#头文件展开" class="headerlink" title="头文件展开"></a>头文件展开</h3><h3 id="GCC使用"><a href="#GCC使用" class="headerlink" title="GCC使用"></a>GCC使用</h3><ol>
+<li><code>gcc -c (编译)</code></li>
+<li><code>gcc (链接 或者 编译 + 链接)</code></li>
+<li><code>g++ (C++对应的命令，其实就是换了前端)</code></li>
+</ol>
+<h3 id="文件扩展名（不怎么考）"><a href="#文件扩展名（不怎么考）" class="headerlink" title="文件扩展名（不怎么考）"></a>文件扩展名（不怎么考）</h3><p>.s S文件是<em>用汇编语言编写的源代码文件</em></p>
+<p>.o 文件，又称对象文件，是可重定向文件的一种，通常以ELF格式保存</p>
+<h3 id="GBD-不怎么考"><a href="#GBD-不怎么考" class="headerlink" title="GBD(不怎么考)"></a>GBD(不怎么考)</h3><p>GDB: GNU Debug</p>
+<ol>
+<li>设置断点</li>
+<li>监视变量值</li>
+<li>单步执行</li>
+<li>修改变量值</li>
+</ol>
+<h3 id="makefile（考）"><a href="#makefile（考）" class="headerlink" title="makefile（考）"></a>makefile（考）</h3><p>自己看吧，太多了复制的累人</p>
+<h3 id="预定义变量（看看）"><a href="#预定义变量（看看）" class="headerlink" title="预定义变量（看看）"></a>预定义变量（看看）</h3><ol>
+<li><code>$&lt;</code> 第一个依赖文件的名称</li>
+<li><code>$?</code> 所有的依赖文件，以空格分开，这些依赖文件的修改日期比目标的创建日期晚</li>
+<li><code>$+</code> 所有的依赖文件，以空格分开，并以出现的先后为序，可能包含重复的依赖文件</li>
+<li><code>$^</code> 所有的依赖文件，以空格分开，不包含重复的依赖文件</li>
+<li><code>$*</code> 不包括扩展名的目标文件名称</li>
+<li><code>$@</code> 目标的完整名称</li>
+<li><code>$%</code> 如果目标是归档成员，则该变量表示目标的归档成员名称</li>
+</ol>
+<h2 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h2><h3 id="VFS（必考）"><a href="#VFS（必考）" class="headerlink" title="VFS（必考）"></a>VFS（必考）</h3><ol>
+<li>虚拟; 仅存在于内存中</li>
+<li>组件：<ol>
+<li>超级块(super block):某一个磁盘的某一个分区的文件系统的信息<ol>
+<li>记录文件系统类型</li>
+<li>记录文件系统的参数</li>
+</ol>
+</li>
+<li>i节点对象(i-node object):index<ol>
+<li>记录的是真正的文件，文件存储在磁盘上时是按照索引号访问文件的</li>
+</ol>
+</li>
+<li>文件对象(file object)<ol>
+<li>记录的是文件描述符，索引号</li>
+<li>不对应真正的文件，文件open后会创建出文件对象。</li>
+<li>文件没有close，则内核中的文件对象就没有释放</li>
+</ol>
+</li>
+<li>目录对象(dentry object)</li>
+</ol>
+</li>
+</ol>
+<h3 id="软硬连接（必考）"><a href="#软硬连接（必考）" class="headerlink" title="软硬连接（必考）"></a>软硬连接（必考）</h3><ol>
+<li>Hard link<ol>
+<li>不同的文件名对应同一个inode</li>
+<li>不能跨越文件系统</li>
+<li>对应系统调用link</li>
+</ol>
+</li>
+<li>Symbolic link<ol>
+<li>存储被链接文件的文件名(而不是inode)实现链接</li>
+<li>可跨越文件系统</li>
+<li>对应系统调用symlink</li>
+</ol>
+</li>
+</ol>
+<h3 id="系统调用和库函数（要能分清）"><a href="#系统调用和库函数（要能分清）" class="headerlink" title="系统调用和库函数（要能分清）"></a>系统调用和库函数（要能分清）</h3><ol>
+<li>都以C函数的形式出现</li>
+<li>系统调用<ol>
+<li>Linux内核的对外接口; 用户程序和内核之间唯一的接口; 提供最小接口</li>
+</ol>
+</li>
+<li>库函数<ol>
+<li>依赖于系统调用; 提供较复杂功能</li>
+<li>例：标准I&#x2F;O库</li>
+</ol>
+</li>
+</ol>
+<h3 id="OPEN"><a href="#OPEN" class="headerlink" title="OPEN"></a>OPEN</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">// open 也可以创建文件，覆盖了creat的所有功能</span><br><span class="hljs-comment">// pathname 含路径的文件名</span><br><span class="hljs-comment">// flags 标志位，是一串二进制数字，可以进行按位或曹旭哦，所以是int类型</span><br><span class="hljs-comment">// mode 文件权限</span><br><span class="hljs-type">int</span> <span class="hljs-title function_">open</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">char</span> *pathname, <span class="hljs-type">int</span> flags)</span>;<br><span class="hljs-type">int</span> <span class="hljs-title function_">open</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">char</span> *pathname, <span class="hljs-type">int</span> flags, <span class="hljs-type">mode_t</span> mode)</span>;<br><span class="hljs-comment">// 创建文件的系统调用接口</span><br><span class="hljs-comment">// flag 给默认为只写O_WRONLY和清零O_TRUNC</span><br><span class="hljs-type">int</span> <span class="hljs-title function_">creat</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">char</span> *pathname, <span class="hljs-type">mode_t</span> mode)</span>;<br></code></pre></td></tr></table></figure>
+
+<p>记得写close</p>
+<h3 id="fcntl（重点但没那么重）"><a href="#fcntl（重点但没那么重）" class="headerlink" title="fcntl（重点但没那么重）"></a>fcntl（重点但没那么重）</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;unistd.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;fcntl.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">fcntl</span><span class="hljs-params">(<span class="hljs-type">int</span> fd, <span class="hljs-type">int</span> cmd)</span>;<br><span class="hljs-type">int</span> <span class="hljs-title function_">fcntl</span><span class="hljs-params">(<span class="hljs-type">int</span> fd, <span class="hljs-type">int</span> cmd, <span class="hljs-type">long</span> arg)</span>;<br><span class="hljs-type">int</span> <span class="hljs-title function_">fcntl</span><span class="hljs-params">(<span class="hljs-type">int</span> fd, <span class="hljs-type">int</span> cmd, <span class="hljs-keyword">struct</span> flock *lock)</span>;<span class="hljs-comment">//可以对文件加锁</span><br><span class="hljs-comment">//(返回值: 若成功则依赖于cmd，若出错为-1)</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="库函数自动处理缓存"><a href="#库函数自动处理缓存" class="headerlink" title="库函数自动处理缓存"></a>库函数自动处理缓存</h3><h3 id="fopen-fclose"><a href="#fopen-fclose" class="headerlink" title="fopen fclose"></a>fopen fclose</h3><h3 id="ioctl"><a href="#ioctl" class="headerlink" title="ioctl"></a>ioctl</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">scanf</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">char</span> *format, ...)</span>;<br><span class="hljs-type">int</span> <span class="hljs-title function_">fscanf</span><span class="hljs-params">(FILE *stream, <span class="hljs-type">const</span> <span class="hljs-type">char</span> *format, ...)</span>;<br><span class="hljs-type">int</span> <span class="hljs-title function_">sscanf</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">char</span> *str, <span class="hljs-type">const</span> <span class="hljs-type">char</span> *format, ...)</span>;<span class="hljs-comment">// 将str所指向的字符串，按照format进行提取</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="Flush（掌握）"><a href="#Flush（掌握）" class="headerlink" title="Flush（掌握）"></a>Flush（掌握）</h3><ol>
+<li>刷新文件流。把流里的数据立刻写入文件</li>
+<li>注意使用打印定位错误的时候可能由于没有及时刷新无法定位</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">fflush</span><span class="hljs-params">(FILE *stream)</span>;<br></code></pre></td></tr></table></figure>
+
+<h3 id="Temporary-File（看一眼）"><a href="#Temporary-File（看一眼）" class="headerlink" title="Temporary File（看一眼）"></a>Temporary File（看一眼）</h3><ol>
+<li>Create a name for a temporary file</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-type">char</span> *<span class="hljs-title function_">tmpnam</span><span class="hljs-params">(<span class="hljs-type">char</span> *s)</span>;<br><span class="hljs-comment">//(返回值: 指向唯一路径名的指针)</span><br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>Create a temporary file</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br>FILE *<span class="hljs-title function_">tmpfile</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span>;<br><span class="hljs-comment">//(返回值: 若成功为文件指针，若出错为NULL)</span><br></code></pre></td></tr></table></figure>
+
+<p>系统调用（红蓝掌握）</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">stat</span> &#123;</span><br>   <span class="hljs-type">mode_t</span> st_mode; <span class="hljs-comment">/*file type &amp; mode 权限和文件类型(Linux 系统中的文件类型)*/</span><br>   <span class="hljs-type">ino_t</span> st_ino; <span class="hljs-comment">/*inode number (serial number)*/</span><br>   <span class="hljs-type">dev_t</span> st_rdev; <span class="hljs-comment">/*device number (file system) 指向设备时字段有意义*/</span><br>   <span class="hljs-type">nlink_t</span> st_nlink; <span class="hljs-comment">/*link count 硬链接计数*/</span><br>   <span class="hljs-type">uid_t</span> st_uid; <span class="hljs-comment">/*user ID of owner*/</span><br>   <span class="hljs-type">gid_t</span> st_gid; <span class="hljs-comment">/*group ID of owner*/</span><br>   <span class="hljs-type">off_t</span> st_size; <span class="hljs-comment">/*size of file, in bytes*/</span><br>   <span class="hljs-type">time_t</span> st_atime; <span class="hljs-comment">/*time of last access*/</span><br>   <span class="hljs-type">time_t</span> st_mtime; <span class="hljs-comment">/*time of last modification*/</span><br>   <span class="hljs-type">time_t</span> st_ctime; <span class="hljs-comment">/*time of last file status change*/</span><br>   <span class="hljs-type">long</span> st_blksize; <span class="hljs-comment">/*Optimal block size for I/O*/</span><br>   <span class="hljs-type">long</span> st_blocks; <span class="hljs-comment">/*number 512-byte blocks allocated*/</span><br>&#125;;<br></code></pre></td></tr></table></figure>
+
+<h3 id="修改文件权限，目录操作，文件锁"><a href="#修改文件权限，目录操作，文件锁" class="headerlink" title="修改文件权限，目录操作，文件锁"></a>修改文件权限，目录操作，文件锁</h3><ol>
+<li>创建一个空目录</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;sys/stat.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;sys/types.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">mkdir</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">char</span> *pathname, <span class="hljs-type">mode_t</span> mode)</span>;<br><span class="hljs-comment">// (Return: 0 if success; -1 if failure)</span><br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>删除一个空目录</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;unistd.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">rmdir</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">char</span> *pathname)</span>;<br><span class="hljs-comment">// (Return: 0 if success; -1 if failure)</span><br></code></pre></td></tr></table></figure>
+
+<ol>
+<li>记录锁</li>
+<li>劝告锁<ol>
+<li>检查，加锁有应用程序自己控制</li>
+</ol>
+</li>
+<li>强制锁<ol>
+<li>检查，加锁由内核控制</li>
+<li>影响[open() read() write()]等</li>
+</ol>
+</li>
+<li>共享锁：读锁</li>
+<li>排他锁：写锁</li>
+</ol>
+<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><h3 id="内核模块"><a href="#内核模块" class="headerlink" title="内核模块"></a>内核模块</h3><ul>
+<li><p>进程控制</p>
+</li>
+<li><p>内存管理</p>
+</li>
+<li><p>虚拟文件系统</p>
+</li>
+</ul>
+<h3 id="驱动和模块"><a href="#驱动和模块" class="headerlink" title="驱动和模块"></a>驱动和模块</h3><p>驱动：</p>
+<ol>
+<li>许多常见驱动的源代码集成在内核源码里</li>
+<li>也有第三方开发的驱动，可以单独编译成模块.ko</li>
+<li>编译需要内核头文件的支持</li>
+</ol>
+<p>模块加载：</p>
+<ol>
+<li>底层命令<ol>
+<li>insmod：加载模块</li>
+<li>rmmod：释放模块</li>
+</ol>
+</li>
+<li>高层命令<ol>
+<li>modprobe</li>
+<li>modprobe -r</li>
+</ol>
+</li>
+</ol>
+<h3 id="模块依赖"><a href="#模块依赖" class="headerlink" title="模块依赖"></a>模块依赖</h3><ol>
+<li>一个<strong>模块A引用另一个模块B</strong>所导出的符号，我们就说<strong>模块B被模块A引用</strong>。</li>
+<li><strong>如果要装载模块A，必须先要装载模块B</strong>。否则，模块B所导出的那些符号的引用就不可能被链接到模块A中。这种模块间的相互关系就叫做<strong>模块依赖</strong>。</li>
+</ol>
+<h3 id="模块命令"><a href="#模块命令" class="headerlink" title="模块命令"></a>模块命令</h3><ol>
+<li><p><code>insmod &lt;module.ko&gt; [module parameters]</code></p>
+<ol>
+<li>Load the module</li>
+<li>注意，只有超级用户才能使用这个命令</li>
+</ol>
+</li>
+<li><p>rmmod</p>
+<ol>
+<li>Unload the module</li>
+</ol>
+</li>
+<li><p>lsmod</p>
+<ol>
+<li>List all modules loaded into the kernel</li>
+<li>这个命令和cat &#x2F;proc&#x2F;modules等价</li>
+</ol>
+</li>
+<li><p><code>modprobe [-r] &lt;module name&gt;</code>：这个文件是个假文件，如果打印出来，得到的是当前内核加载的模块列表，不可修改、不可删除。</p>
+</li>
+<li><p>Load the module specified and modules it depends</p>
+</li>
+</ol>
+<h3 id="内核和c语言程序的区别"><a href="#内核和c语言程序的区别" class="headerlink" title="内核和c语言程序的区别"></a>内核和c语言程序的区别</h3><table>
+<thead>
+<tr>
+<th></th>
+<th>C</th>
+<th>内核</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>运行</td>
+<td>用户空间</td>
+<td>内核空间</td>
+</tr>
+<tr>
+<td>入口</td>
+<td>main（）</td>
+<td>module_init决定</td>
+</tr>
+<tr>
+<td>出口</td>
+<td>无</td>
+<td>module_exit决定</td>
+</tr>
+<tr>
+<td>运行</td>
+<td>直接运行</td>
+<td>insmod</td>
+</tr>
+<tr>
+<td>调试</td>
+<td>gbd</td>
+<td>kdbug，kdb，kgdb</td>
+</tr>
+</tbody></table>
+<h3 id="要会读内核代码"><a href="#要会读内核代码" class="headerlink" title="要会读内核代码"></a>要会读内核代码</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;linux/kernel.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;linux/module.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;linux/init.h&gt;</span></span><br><span class="hljs-type">static</span> <span class="hljs-type">int</span> __init <span class="hljs-title function_">hello_init</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span><br>&#123;<br>  printk(KERN_INFO <span class="hljs-string">&quot;Hello world\n&quot;</span>);<br>  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><span class="hljs-type">static</span> <span class="hljs-type">void</span> __exit <span class="hljs-title function_">hello_exit</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span><br>&#123;<br>  printk(KERN_INFO <span class="hljs-string">&quot;Goodbye world\n&quot;</span>);<br>&#125;<br>module_init(hello_init);<br>module_exit(hello_exit);<br></code></pre></td></tr></table></figure>
+
+<h3 id="无敌的华为送分题"><a href="#无敌的华为送分题" class="headerlink" title="无敌的华为送分题"></a>无敌的华为送分题</h3>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/linux/">#linux</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Linux</div>
+      <div>http://s1mbol.top/2023/04/12/Linux/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>s1mble</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年4月12日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/02/22/web-1/" title="web">
+                        <span class="hidden-mobile">web</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
